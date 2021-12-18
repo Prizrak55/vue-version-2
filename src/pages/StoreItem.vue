@@ -45,7 +45,7 @@
         border-radius: 4px;
         position: relative;
         @media screen and (max-width: 740px){
-            margin: 0 0px 0px 0;
+            margin: 0 0px 21px 0;
 
         }
         cursor: pointer;
