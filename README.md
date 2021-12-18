@@ -1,19 +1,8 @@
 # vue-version-2
+Здравствуйте. Я сделал через бесплатное api. Данные брал и все почти все сделал.  Кроме кнопки заблоченой и сохранения данных(но я показал, как работает localStorage
+В остальном, все работает, хорошего дня.
 
-## Project setup
-```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
