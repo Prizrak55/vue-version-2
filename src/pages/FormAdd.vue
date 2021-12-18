@@ -1,5 +1,5 @@
 <template>
-    <div> 
+    <div class="main"> 
         <form class="form" @onChange="onChangeForm" @submit.prevent>
             <div class="inputs">
                 <label>Наименование товара</label>
@@ -90,6 +90,12 @@
 </script>
 
 <style lang="scss" scoped>
+.main{
+    @media screen and (max-width: 740px){
+      display: flex;
+        justify-content: center;
+     }
+}
 .form{
     position: fixed;
     display: flex;
@@ -102,6 +108,12 @@
     background: #FFFEFB;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
     border-radius: 4px;
+    @media screen and (max-width: 740px){
+      position: relative;
+        
+        left: 0px;
+
+     }
     .inputs{
         display: block;
         label{

@@ -24,7 +24,10 @@ export default {
 <style lang="scss" scoped>
 .main-components{
   display: flex;
-
+    @media screen and (max-width: 740px){
+      display: block;
+      
+     }
 }
 .app{
   background-color: #faf9f7;

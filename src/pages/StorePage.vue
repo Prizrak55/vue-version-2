@@ -37,7 +37,7 @@ import {mapState, mapGetters, mapActions, mapMutations} from 'vuex'
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .store-page{
   margin: 83px 0 0 380px;
@@ -45,7 +45,17 @@ import {mapState, mapGetters, mapActions, mapMutations} from 'vuex'
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+  @media screen and (max-width: 740px){
+      position: relative;
+       margin: 83px 0 0 0px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+
+     }
+
 }
+
 .selected{
   display: block;
   position: absolute;
@@ -55,7 +65,12 @@ import {mapState, mapGetters, mapActions, mapMutations} from 'vuex'
   top: -45px;
   border: none;
   /* Darks & Whites / White */
-
+ @media screen and (max-width: 740px){
+      position: relative;
+      left: 0;
+      top: 0px;
+      margin: 10px auto;
+     }
   background: #FFFEFB;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
