@@ -8,7 +8,9 @@
       <option>название</option>
       <option>цена</option>
    </select>
+    <transition-group name="list" tag="p">
           <StoreItem v-for="post in $store.getters.getPosts" :key="post.id" :post="post"/>
+   </transition-group>
         </div>
     </div>
 </template>
@@ -57,6 +59,23 @@ import {mapState, mapGetters, mapActions, mapMutations} from 'vuex'
   background: #FFFEFB;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+}
+p{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to /* .list-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 </style>
